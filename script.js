@@ -1,7 +1,7 @@
+
+// countdown timer
 var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
-
-
 
 function countdown() {
     var timeLeft = 60;
@@ -20,3 +20,4 @@ function countdown() {
     }
   }, 1000);
 }
+countdown ()
