@@ -32,19 +32,17 @@ countdown ()
 //questions
 var questionCounter=0;
 
-var questionDiv = document.querySelector("#question-title")
+var questionDiv = document.querySelectoir("#question-title")
 
 var questions = [{
     question:”Question being asked #1?”,
 	  choices:[”Boolean, “string”, “function”, “number”]
     correctAnswer: “Function”
 }, 
-{
 	question:”Question being asked #2?”,
 	choices:[”choice 1, “choice 2”, “choice 3”, “choice 4”]
 correctAnswer: “Function”
-	},
-  { 
+	}, 
 	question:” Question being asked #3?”,
 	choices:[”choice 1a, “choice 2a”, “choice 3a”, “choice 4a”]
 correctAnswer: “Function”
@@ -53,15 +51,8 @@ correctAnswer: “Function”
 function renderFirstQuestion(){}
   var question1 = questions[questionCounter];
 
-  //actual question
   var question = question1.question
-
-  var questionh2=document.createElement("h2")
-  questionh2.textContent = question;
-  questionDiv.appendChild(questionh2)
- 
-  //array to loop through each element and make a button for each choice
   var choices = question1.choices
   var correctAnswer = question1.correctAnswer
-//once they answer the question, the counter increases
+
   questionCounter++;
