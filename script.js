@@ -29,23 +29,25 @@ function countdown() {
 countdown ()
 
 
-//questions
+//questions - conditionals
 var questionCounter=0;
 
 var questionDiv = document.querySelectoir("#question-title")
 
 var questions = [{
-    question:”Question being asked #1?”,
-	  choices:[”Boolean, “string”, “function”, “number”]
-    correctAnswer: “Function”
+    question:"Question being asked #1?”,
+	  choices:["boolean", "string”, “function”, “number”]
+    correctAnswer:"Function"
 }, 
-	question:”Question being asked #2?”,
-	choices:[”choice 1, “choice 2”, “choice 3”, “choice 4”]
-correctAnswer: “Function”
+{
+	question:"Question being asked #2?”,
+	choices:["choice 1", "choice 2”, “choice 3”,“choice 4”]
+  correctAnswer:"Function"
 	}, 
-	question:” Question being asked #3?”,
-	choices:[”choice 1a, “choice 2a”, “choice 3a”, “choice 4a”]
-correctAnswer: “Function”
+  {
+	question:"Question being asked #3?”,
+	choices:["choice 1a", "choice 2a”, “choice 3”,“choice 4”]
+  correctAnswer:"Function"
 }];
 
 function renderFirstQuestion(){}
